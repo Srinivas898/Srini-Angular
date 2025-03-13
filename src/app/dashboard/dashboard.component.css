@@ -1,0 +1,38 @@
+.parent{
+    width: 90vw;
+    height: 90vh;
+    background-color: aquamarine;
+    display: flex;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.left{
+    width: 25%;
+    height: 100%;
+    background-color: antiquewhite;
+
+}
+.right{
+    width: 75%;
+    height: 100%;
+    background-color:darkgrey
+}
+h1{
+    text-align: center;
+    color:blue;
+}
+h3{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+button{
+    width: 200px;
+    height: 40px;
+    font-size: large;
+    background-color: red;
+    color: white;
+    margin-left: 80px;
+    margin-top: 50px;
+
+}

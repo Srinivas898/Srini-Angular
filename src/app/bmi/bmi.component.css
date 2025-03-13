@@ -1,0 +1,29 @@
+.BMI{
+    width: 1000px;
+    height: 700px;
+    background-color: blueviolet;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+img{
+    margin-left: 170px;
+    margin-top: 50px;
+}
+input{
+    margin-left: 400px;
+    font-size: large;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+label{
+    margin-left: 450px;
+}
+button{
+    margin-left: 450px;
+}
+.result{
+    margin-bottom: 200px;
+}
