@@ -13,6 +13,11 @@ import { BMIComponent } from './bmi/bmi.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { SimplecalculatorComponent } from './simplecalculator/simplecalculator.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AccountsComponent } from './accounts/accounts.component';
+import { FlipcartComponent } from './flipcart/flipcart.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +30,24 @@ import { SimplecalculatorComponent } from './simplecalculator/simplecalculator.c
     CircleComponent,
     BMIComponent,
     DatabindingComponent,
-    SimplecalculatorComponent
+    SimplecalculatorComponent,
+    DirectivesComponent,
+    VehicleComponent,
+    AccountsComponent,
+    FlipcartComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
+    
+    
+    
+    
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

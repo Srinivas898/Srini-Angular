@@ -1,0 +1,25 @@
+<h1>Account Datails</h1>
+<table class="table table-primary">
+    <thead>
+        <tr>
+            <th>SL No</th>
+            <th>Account_Name</th>
+            <th>Account_Number</th>
+            <th>Avaiilable_Balance</th>
+            <th>City</th>
+            <th>ID</th>
+            <th>IFSC Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let accnt of account; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{accnt.account_name}}</td>
+            <td>{{accnt.account_number}}</td>
+            <td>{{accnt.available_balance}}</td>
+            <td>{{accnt.city}}</td>
+            <td>{{accnt.id}}</td>
+            <td>{{accnt.ifsc_code}}</td>
+        </tr>
+    </tbody>
+</table>

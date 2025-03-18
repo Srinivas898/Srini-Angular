@@ -9,17 +9,25 @@ import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { SimplecalculatorComponent } from './simplecalculator/simplecalculator.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { FlipcartComponent } from './flipcart/flipcart.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
     {path:'Home',component:HomeComponent},
     {path:'Welcome',component:WelcomeComponent},
     {path:'Data Binding',component:DatabindingComponent},
+    {path:'Directives',component:DirectivesComponent},
     {path:'Calculator',component:CalculatorComponent},
     {path:'Rectangle',component:RectangleComponent},
     {path:'Circle',component:CircleComponent},
     {path:'BMI',component:BMIComponent},
     {path:'Simple Interest',component:SimplecalculatorComponent},
+    {path:'vehicle',component:VehicleComponent},
+    {path:'account',component:AccountsComponent},
+    {path:'Flipcart',component:FlipcartComponent},
   ]},
 ];
 
