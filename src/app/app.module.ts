@@ -17,7 +17,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AccountsComponent } from './accounts/accounts.component';
-import { FlipcartComponent } from './flipcart/flipcart.component';
+import { VehicleService } from './vehicle.service';
+import { FlipcartApiComponent } from './flipcart-api/flipcart-api.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { FlipcartComponent } from './flipcart/flipcart.component';
     DirectivesComponent,
     VehicleComponent,
     AccountsComponent,
-    FlipcartComponent
+    FlipcartApiComponent,
+   
+    
     
   ],
   imports: [
@@ -42,6 +45,7 @@ import { FlipcartComponent } from './flipcart/flipcart.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    
     
     
     

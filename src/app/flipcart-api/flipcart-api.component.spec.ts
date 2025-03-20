@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FlipcartComponent } from './flipcart.component';
+import { FlipcartApiComponent } from './flipcart-api.component';
 
-describe('FlipcartComponent', () => {
-  let component: FlipcartComponent;
-  let fixture: ComponentFixture<FlipcartComponent>;
+describe('FlipcartApiComponent', () => {
+  let component: FlipcartApiComponent;
+  let fixture: ComponentFixture<FlipcartApiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FlipcartComponent ]
+      declarations: [ FlipcartApiComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FlipcartComponent);
+    fixture = TestBed.createComponent(FlipcartApiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

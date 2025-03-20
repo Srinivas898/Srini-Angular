@@ -12,7 +12,8 @@ import { SimplecalculatorComponent } from './simplecalculator/simplecalculator.c
 import { DirectivesComponent } from './directives/directives.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { AccountsComponent } from './accounts/accounts.component';
-import { FlipcartComponent } from './flipcart/flipcart.component';
+import { FlipcartApiComponent } from './flipcart-api/flipcart-api.component';
+
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -27,7 +28,8 @@ const routes: Routes = [
     {path:'Simple Interest',component:SimplecalculatorComponent},
     {path:'vehicle',component:VehicleComponent},
     {path:'account',component:AccountsComponent},
-    {path:'Flipcart',component:FlipcartComponent},
+    {path:'Flipcart-API',component:FlipcartApiComponent}
+    
   ]},
 ];
 
