@@ -45,7 +45,7 @@
     <tbody>
         <tr *ngFor ="let Srinivas of products">
             <td>{{Srinivas.name}}</td>
-            <td [ngStyle]="{color:Srinivas.price<2000 ? 'green':'red'}">{{Srinivas.price}}</td>
+            <!-- <td [ngStyle]="{color:Srinivas.price<2000 ? 'green':'red'}">{{Srinivas.price}}</td> -->
             <td [ngClass]="{'green':Srinivas.rating>4,'red':Srinivas.rating<2,'yellow':Srinivas.rating>2&&Srinivas.rating<4}">{{Srinivas.rating}}</td>
         </tr>
     </tbody>

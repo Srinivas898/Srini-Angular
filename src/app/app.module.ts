@@ -11,7 +11,7 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { DatabindingComponent } from './databinding/databinding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SimplecalculatorComponent } from './simplecalculator/simplecalculator.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
@@ -19,6 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AccountsComponent } from './accounts/accounts.component';
 import { VehicleService } from './vehicle.service';
 import { FlipcartApiComponent } from './flipcart-api/flipcart-api.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { FlipcartApiComponent } from './flipcart-api/flipcart-api.component';
     VehicleComponent,
     AccountsComponent,
     FlipcartApiComponent,
+    CreateVehicleComponent,
+    CreateAccountComponent,
+    StudentComponent,
    
     
     
@@ -45,6 +51,7 @@ import { FlipcartApiComponent } from './flipcart-api/flipcart-api.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
     
     
     

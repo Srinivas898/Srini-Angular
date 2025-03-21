@@ -13,6 +13,9 @@ import { DirectivesComponent } from './directives/directives.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { FlipcartApiComponent } from './flipcart-api/flipcart-api.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { StudentComponent } from './student/student.component';
 
 
 const routes: Routes = [
@@ -28,7 +31,10 @@ const routes: Routes = [
     {path:'Simple Interest',component:SimplecalculatorComponent},
     {path:'vehicle',component:VehicleComponent},
     {path:'account',component:AccountsComponent},
-    {path:'Flipcart-API',component:FlipcartApiComponent}
+    {path:'Flipcart-API',component:FlipcartApiComponent},
+    {path:'Create-Vehicle',component:CreateVehicleComponent},
+    {path:'Create-Account',component:CreateAccountComponent},
+    {path:'Student',component:StudentComponent}
     
   ]},
 ];
