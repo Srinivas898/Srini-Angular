@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -11,58 +8,46 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { DatabindingComponent } from './databinding/databinding.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SimplecalculatorComponent } from './simplecalculator/simplecalculator.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
-import { HttpClientModule } from '@angular/common/http';
 import { AccountsComponent } from './accounts/accounts.component';
-import { VehicleService } from './vehicle.service';
 import { FlipcartApiComponent } from './flipcart-api/flipcart-api.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentComponent } from './student/student.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    HomeComponent,
-    WelcomeComponent,
-    CalculatorComponent,
-    RectangleComponent,
-    CircleComponent,
-    BMIComponent,
-    DatabindingComponent,
-    SimplecalculatorComponent,
-    DirectivesComponent,
-    VehicleComponent,
-    AccountsComponent,
-    FlipcartApiComponent,
-    CreateVehicleComponent,
-    CreateAccountComponent,
-    StudentComponent,
-    CreateUserComponent,
-   
-    
-    
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    ReactiveFormsModule
-    
-    
-    
-    
-    
-    
 
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+const routes: Routes = [
+  {path:'dashboard',component:DashboardComponent,children:[
+    {path:'Home',component:HomeComponent},
+    {path:'Welcome',component:WelcomeComponent},
+    {path:'Data Binding',component:DatabindingComponent},
+    {path:'Directives',component:DirectivesComponent},
+    {path:'Calculator',component:CalculatorComponent},
+    {path:'Rectangle',component:RectangleComponent},
+    {path:'Circle',component:CircleComponent},
+    {path:'BMI',component:BMIComponent},
+    {path:'Simple Interest',component:SimplecalculatorComponent},
+    {path:'vehicle',component:VehicleComponent},
+    {path:'account',component:AccountsComponent},
+    {path:'Flipcart-API',component:FlipcartApiComponent},
+    {path:'Create-Vehicle',component:CreateVehicleComponent},
+    {path:'Create-Account',component:CreateAccountComponent},
+    {path:'Student Card',component:StudentComponent},
+    {path:'Create-User',component:CreateUserComponent}
+    
+  ]},
+];
+
+
+
+
+
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppModule { }
+export class AppRoutingModule { }

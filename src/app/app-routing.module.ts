@@ -16,6 +16,7 @@ import { FlipcartApiComponent } from './flipcart-api/flipcart-api.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentComponent } from './student/student.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 
 const routes: Routes = [
@@ -34,7 +35,8 @@ const routes: Routes = [
     {path:'Flipcart-API',component:FlipcartApiComponent},
     {path:'Create-Vehicle',component:CreateVehicleComponent},
     {path:'Create-Account',component:CreateAccountComponent},
-    {path:'Student',component:StudentComponent}
+    {path:'Student Cards',component:StudentComponent},
+    {path:'Create-User',component:CreateUserComponent}
     
   ]},
 ];
