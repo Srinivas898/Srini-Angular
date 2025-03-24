@@ -23,6 +23,9 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentComponent } from './student/student.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
+import { PinterestService } from './pinterest.service';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +47,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     CreateAccountComponent,
     StudentComponent,
     CreateUserComponent,
+    PinterestComponent,
+    VehicleDetailsComponent,
    
     
     
@@ -53,7 +58,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
     
     
     

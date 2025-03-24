@@ -17,6 +17,8 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentComponent } from './student/student.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 
 const routes: Routes = [
@@ -36,7 +38,10 @@ const routes: Routes = [
     {path:'Create-Vehicle',component:CreateVehicleComponent},
     {path:'Create-Account',component:CreateAccountComponent},
     {path:'Student Cards',component:StudentComponent},
-    {path:'Create-User',component:CreateUserComponent}
+    {path:'Create-User',component:CreateUserComponent},
+    {path:'Pinterest',component:PinterestComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent}
     
   ]},
 ];
