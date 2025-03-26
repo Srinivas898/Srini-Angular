@@ -2,6 +2,9 @@
     <div class="container" *ngFor="let flipcartdata1 of flipcartdata">
         <div class="top">
             <img src="{{flipcartdata1.image}}" alt="">
+            <app-rating [rating]="flipcartdata1.rating?.rate">
+                <!-- <img src="/assets/icons8-star-filled.gif" alt=""> -->
+            </app-rating>
         </div>
         <div class="bottom">
             <span>{{flipcartdata1.category}}</span><br>

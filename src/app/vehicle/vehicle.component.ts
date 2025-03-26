@@ -9,6 +9,7 @@ import { VehicleService } from '../vehicle.service';
 export class VehicleComponent {
   term:string='';
   vehicles:any=[];
+
  constructor(private _vehicleService:VehicleService){
   this.loadVehicles();
  }
@@ -62,10 +63,11 @@ delete(id:any){
   }else{
     alert('You have Cancelled!');
   }
-  
 }
+
 limit:string='';
 page:string='';
+
 pagination(){
   this._vehicleService.getpaginatedVehicles(this.limit,this.page).subscribe(
     (data:any)=>{

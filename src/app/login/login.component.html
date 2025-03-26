@@ -1,0 +1,9 @@
+<button routerLink="/dashboard">Click Here to redirect to dashboard</button><br><br>
+
+<form [formGroup]="loginForm">
+    <label>Email:</label>
+    <input type="email" formControlName="email"><br><br>
+    <label>Password:</label>
+    <input type="password" formControlName="password"><br><br>
+    <button (click)="login()" class="btn btn-primary">Login</button>
+</form>

@@ -26,9 +26,16 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
 import { PinterestService } from './pinterest.service';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { LoginComponent } from './login/login.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component'
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     DashboardComponent,
     HomeComponent,
@@ -49,10 +56,14 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     CreateUserComponent,
     PinterestComponent,
     VehicleDetailsComponent,
-   
-    
-    
-  ],
+    LoginComponent,
+    StudentDetailsComponent,
+    Sibling1Component,
+    Sibling2Component,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

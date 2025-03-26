@@ -1,0 +1,101 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color:grey;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+
+}
+.container{
+    width: 40%;
+    height: 40%;
+    background-color: cornsilk;
+    border-radius: 10px;
+    
+
+}
+.top{
+    width: 100%;
+    height: 25%;
+    background-color:orange;
+    display: flex;
+}
+.middle{
+    width: 100%;
+    height: 50%;
+    background-color:white;
+    display: flex;
+    /* align-items: flex-end; */
+}
+.middle-left{
+    width:60% ;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+.middle-right{
+    width:40% ;
+    height: 100%;
+    /* margin-right: 0px; */
+    
+}
+.studentimage{
+    width: 200px;
+    height: 160px;
+    margin-right: 0px;
+    padding-top: 7px;
+
+}
+.bottom{
+    width: 100%;
+    height: 25%;
+    background-color:darkgreen;
+    
+   
+}
+.bottom1{
+    width: 100%;
+    height: 50%;
+    display: flex; 
+    justify-content:space-around;
+    /* gap:20px; */
+    align-items: center;
+    font-size: large;
+}
+.bottom2{
+    width: 100%;
+    height: 50%;
+    display: flex; 
+    justify-content:space-around;
+    /* gap:20px; */
+    align-items: center;
+    font-size: large;
+    padding-bottom: 20px;
+    
+}
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+
+img{
+    width: 80px;
+    height: 80px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+h3{
+    /* margin-left: 10px; */
+    margin-top: 25px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
