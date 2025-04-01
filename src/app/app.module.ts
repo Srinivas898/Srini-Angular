@@ -15,9 +15,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SimplecalculatorComponent } from './simplecalculator/simplecalculator.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AccountsComponent } from './accounts/accounts.component';
-import { VehicleService } from './vehicle.service';
+// import { VehicleService } from './vehicle.service';
 import { FlipcartApiComponent } from './flipcart-api/flipcart-api.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
@@ -32,7 +32,11 @@ import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
-import { RatingComponent } from './rating/rating.component'
+import { RatingComponent } from './rating/rating.component';
+import { CapitalDirective } from './capital.directive';
+import { BalancePipe } from './balance.pipe';
+import { TokenInterceptor } from './token.interceptor';
+
 
 @NgModule({
   declarations: [	
@@ -62,7 +66,10 @@ import { RatingComponent } from './rating/rating.component'
     Sibling2Component,
     ParentComponent,
     ChildComponent,
-    RatingComponent
+    RatingComponent,
+    CapitalDirective,
+    BalancePipe,
+    
    ],
   imports: [
     BrowserModule,
@@ -79,7 +86,13 @@ import { RatingComponent } from './rating/rating.component'
     
 
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass:TokenInterceptor,
+      multi:true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
