@@ -36,6 +36,7 @@ import { RatingComponent } from './rating/rating.component';
 import { CapitalDirective } from './capital.directive';
 import { BalancePipe } from './balance.pipe';
 import { TokenInterceptor } from './token.interceptor';
+import { AboutUsModule } from './about-us/about-us.module';
 
 
 @NgModule({
@@ -77,6 +78,7 @@ import { TokenInterceptor } from './token.interceptor';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    AboutUsModule
     
     
     
