@@ -1,6 +1,6 @@
 <form [formGroup]="userForm">
     <label>Name:</label>
-    <input type="text" formControlName="name"><br>
+    <input type="text" formControlName="name" appCapital><br>
     <div *ngIf="userForm.get('name')?.touched && userForm.get('name')?.invalid">
         <p *ngIf="userForm.get('name')?.errors?.['required']">Name is Required</p>
         <p *ngIf="userForm.get('name')?.errors?.['minlength']">Name Should be minimum of 6 Charecters</p>
@@ -8,6 +8,11 @@
     </div>
     <label>Email:</label>
     <input type="email" formControlName="email"><br>
+    <div *ngIf="userForm.get('email')?.touched && userForm.get('email')?.invalid">
+        <p *ngIf="userForm.get('email')?.errors?.['required']">Email is Required</p>
+        <p *ngIf="userForm.get('email')?.errors?.['minlength']">Email Should be minimum of 6 Charecters</p>
+        <p *ngIf="userForm.get('email')?.errors?.['maxlength']">Please Enter Google Mail Only</p>
+    </div>
     <label>Password:</label>
     <input type="password" formControlName="password"><br>
     <label>Mobile:</label>
